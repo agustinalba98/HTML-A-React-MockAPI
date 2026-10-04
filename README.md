@@ -63,8 +63,8 @@ src/
 ## Pasos para clonar e instalar
 
 ```bash
-git clone https://github.com/tu-usuario/ecommerce-react
-cd ecommerce-react
+git clone https://github.com/agustinalba98/HTML-A-React-MockAPI.git
+cd HTML-A-React-MockAPI
 npm install
 npm run dev
 ```
