@@ -1,0 +1,90 @@
+.about {
+    padding: 60px 40px;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.about-us-top {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-us-top p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.about-us-top > p:nth-of-type(3) {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 35px 0;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 35px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.about-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    max-width: 1000px;
+    margin: 60px auto 0;
+    padding: 35px;
+    border-radius: 15px;
+    background-color: var(--color-bg-alt);
+    color: var(--color-text-secondary);
+}
+
+.about-contact > img {
+    flex: 1;
+    max-width: 380px;
+    margin: 0;
+}
+
+.about-contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.about-contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.about-contact-info a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    transition: color 0.4s ease;
+}
+
+.about-contact-info a:hover {
+    color: var(--color-text-hover);
+}
+
+@media (max-width: 768px) {
+    .about-contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-contact-info {
+        text-align: center;
+    }
+}

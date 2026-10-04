@@ -1,0 +1,91 @@
+.register {
+    padding: 60px 40px;
+}
+
+.register h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.register > p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+.register-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--color-bg-alt);
+    color: var(--color-text-secondary);
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.register-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.register-form label {
+    font-weight: 600;
+}
+
+.register-form input,
+.register-form select,
+.register-form textarea {
+    padding: 12px;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+.register-form input:focus,
+.register-form select:focus,
+.register-form textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.register-form button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.register-form button:hover:not(:disabled) {
+    background-color: var(--color-text-hover);
+}
+
+.register-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.register-form .error {
+    color: #ff8a8a;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+    .register {
+        padding: 40px 20px;
+    }
+
+    .register-form {
+        padding: 25px;
+    }
+}

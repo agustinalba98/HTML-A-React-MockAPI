@@ -1,0 +1,199 @@
+.admin-products {
+    padding: 60px 40px;
+}
+
+.admin-products h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.admin-products > p {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+.admin-layout {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.table-responsive {
+    flex: 1;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--color-bg-alt);
+    color: var(--color-text-secondary);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+th,
+td {
+    padding: 10px 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    font-size: 0.85rem;
+}
+
+td img {
+    width: 50px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+td button {
+    padding: 8px 14px;
+    margin: 4px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: inherit;
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+}
+
+td button:first-child {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+td button:last-child {
+    background-color: var(--color-text-hover);
+    color: var(--color-secondary);
+}
+
+td button:hover {
+    transform: scale(1.05);
+}
+
+.form-card {
+    min-width: 320px;
+    max-width: 380px;
+    background-color: var(--color-bg);
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 30px 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--color-text);
+}
+
+.product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    padding: 10px 14px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    transition: border-color 0.3s ease;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+.btn-submit {
+    margin-top: 10px;
+    padding: 14px;
+    background-color: var(--color-secondary);
+    color: var(--color-text-secondary);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.btn-cancel {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid var(--color-text);
+    background: transparent;
+    font-family: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .admin-layout {
+        flex-direction: column;
+    }
+
+    .form-card {
+        max-width: 100%;
+    }
+}
