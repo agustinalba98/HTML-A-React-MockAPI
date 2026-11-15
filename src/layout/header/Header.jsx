@@ -3,6 +3,7 @@ import "./Header.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faBasketShopping, faRightToBracket, faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import { useOrder } from "../../context/OrderContext";
+import logo from "../../assets/images/Logo-benditoarte.png";
 
 function Header() {
     const { totalItems, openCart } = useOrder();
@@ -11,7 +12,7 @@ function Header() {
         <header className="header-content">
             <Link to="/">
                 <img
-                    src="/src/assets/images/logo-benditoarte.png"
+                    src={logo}
                     alt="logo bendito arte"
                     className="logo"
                 />

@@ -2,13 +2,15 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt, faPalette, faTruckFast } from '@fortawesome/free-solid-svg-icons';
 import ProductContainer from '../../components/product-container/ProductContainer';
+import banner from "../../assets/images/banner.png";
+import introduccion from "../../assets/images/Introduccion.png";
 
 function Home() {
     return (
         <main>
             <section className="banner" id="inicio">
                 <img
-                    src="/src/assets/images/banner.png"
+                    src={banner}
                     alt="Banner principal de Bendito Arte"
                 />
                 <div className="banner-content">
@@ -32,7 +34,7 @@ function Home() {
                 </div>
                 <div className="hero-image">
                     <img
-                        src="/src/assets/images/Introduccion.png"
+                        src={introduccion}
                         alt="Productos personalizados de Bendito Arte"
                     />
                 </div>
