@@ -7,7 +7,7 @@ import { OrderProvider } from './context/OrderContext.jsx'
 
 createRoot(document.getElementById('root')).render(
 
-    <BrowserRouter>
+    <BrowserRouter basename="/HTML-A-React-MockAPI">
 
       <StrictMode>
         <OrderProvider>
